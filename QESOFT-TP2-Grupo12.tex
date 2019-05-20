@@ -1,0 +1,178 @@
+% !TEX encoding = UTF-8 Unicode
+
+%=============================================
+%---(C) QESOFT, Isabel Sampaio (ais@isep.ipp.pt), 2019 ---
+%=============================================
+
+%----------tipo de documento------------------l
+\documentclass[openany,10pt,a4paper]{article}
+
+% ----------------------
+% Configuração página
+
+\usepackage
+[
+a4paper,
+left=2.6cm,
+right=2.4cm,
+top= 2.6 cm,
+bottom=1.5 cm,
+]
+{geometry}
+
+
+% ---- Sem indentação parágrafo -------
+\setlength\parindent{0pt} 
+\setlength{\voffset}{-0.2in}
+
+% ---- Espaçamento entre parágrafos -------
+\setlength{\parskip}{5pt}
+
+% -----Topo------------------
+\setlength{\topmargin}{-\headheight}
+\setlength{\headsep}{0.0cm}
+
+% -----Espaçamento palavras---------------
+\renewcommand{\baselinestretch}{1.0}   
+
+%------ Tabelas -----
+\usepackage{longtable}
+
+% ------------------ Opções em tabelas-----------------
+\usepackage{array}		% para centrar colunas (de tabelas) com p{XXcm}
+\usepackage{paralist}	% para colocar enumerates em linha com um parágrafo
+
+\usepackage{booktabs,multirow} 
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{subcaption}
+
+\usepackage{tabu}
+\usepackage{tabulary}
+
+% -----------------PORTUGUES----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%-----tipo letra---------
+\usepackage{helvet} % --- não existe Calibri em  pdflatex
+\renewcommand{\familydefault}{\sfdefault}
+
+%---Portuguese-specific commands ----
+\usepackage[english,portuguese]{babel}
+ 
+% -----------------   Hyphenation rules ----------------
+\usepackage{hyphenat}
+\hyphenation{re-cu-pe-rar te-ma ma-té-ri-a ci-en-tí-fi-co}
+
+%-------------------------------------------------------------------------------------------------------
+%para palavras que ao quebrar leva 2 hifen ,: por exemplo "verificou-se": no texto fazer verificou{-}{-}se
+\defineshorthand{"-}{\nobreak\hskip0pt\discretionary{-}{-}{-}\nobreak\hskip0pt} 
+
+% ---------- Hyperlinks ------------
+\usepackage{cooltooltips} 
+\def\cool{\texttt{cool}}
+
+\usepackage{verbatim}
+
+% -------- Incluir pdfs-------
+\usepackage{graphicx}
+
+%---------Para Titulos: capitulos, secções, etc.-----------
+\usepackage{titlesec}
+
+\titleformat{\section} {\Large\bfseries}{\thesection.}{1em}{}
+\titleformat*{\subsection}{\large}
+\titleformat*{\subsubsection}{\large}
+
+%------------- espaçamento antes/depois titulos -----------
+
+\titlespacing{\section}{0pt}{*1.1}{*1.0}
+\titlespacing{\subsection}{0pt}{*1.1}{*1.0}
+\titlespacing{\subsubsection}{0pt}{*1.1}{*1.0}
+
+ %--------- Inicio do documento--------------------
+\begin{document}
+\pagenumbering{arabic}
+
+\title{\textbf{Título}}
+\author{João Cardoso, \textit{1150943} \\ Sofia Silva, \textit{1150690} \\ Tiago Leite, \textit{1150780}}
+\date{}
+
+\maketitle
+
+% -------------- SECÇÕES ---------------
+\section{Introdução}
+
+Para este relatório interessam apenas aspectos técnico/científicos. Indicar o objectivo. Existem unicamente 3 níveis para as secções. Não podem existir linhas em branco (parágrafos vazios). O relatório tem de seguir obrigatoriamente este modelo, logo não pode ser alterado, exceptuando-se pela adição de (sub)secções que os autores considerem ser necessárias, mas sempre sem ultrapassar os 3 níveis como referido. A introdução nunca poderá ultrapassar a primeira página.
+
+Utilizar figuras e tabelas de forma criteriosa. O conteúdo das tabelas tem de utilizar a mesma fonte do texto. O relatório não pode possuir menos de 10 páginas nem mais de 12, excluindo referências. 
+Poderão existir anexos, mesmo para lá do limite do documento, mas em princípio o seu conteúdo não deverá ser avaliado (excepção abaixo). A numeração dos anexos é alfabética e manual. 
+
+Os autores devem ser identificados pelo primeiro e último nomes, e pelo número. O número deve encontrar-se em itálico.
+
+\subsection{Secção Nível 2}
+Nível a usar quando necessário.
+
+\subsubsection{Secção Nível 3}
+Nível a usar apenas quando for estritamente necessário.
+
+\section{Escolha do Projecto}
+O relatório pode seguir a estrutura do próprio trabalho. Deverá existir uma secção que apresente o projecto escolhido para ser avaliado e a justificação da escolha desse projecto.
+
+\section{Avaliação e Outras Secções}
+O relatório deve descrever toda a avaliação realizada e os resultados dessa avaliação. A avaliação do processo terá de ser realizada usando o CMMI \cite{CMMI2010} e de acordo com a abordagem indicada nas aulas e complementada com os documentos fornecidos, incluindo este. A avaliação do produto seguirá o modelo OMG a ser indicado. Usar uma secção para cada avaliação.
+
+O trabalho requer o desenvolvimento de um questionário para cada avaliação. Os questionários devem ser desenvolvidos de forma rigorosa como qualquer questionário usado em investigação, conforme referido nas aulas e documentos fornecidos. Documentar devidamente o desenvolvimento dos questionários em secção específica para o efeito. Os questionários ficarão em anexo e/ou online.
+
+Cada grupo tem de avaliar um projecto escolhido por si e que possua “fases” razoavelmente definidas, tal como indicado no enunciado.
+
+Apresentar muito sucintamente as principais limitações acerca da forma como as avaliações foram realizadas. Incluir uma secção com a identificação das áreas do processo/produto a melhorar ordenadas por prioridade, e devidamente justificado. Nessa secção ou noutra deverá ser feito a análise integrada das duas avaliações. A aplicação das ferramentas deve ser resumida numa página, máximo duas páginas.
+
+\section{Conclusões}
+
+As principais conclusões serão apresentadas aqui. Notar que apenas interessam aspectos técnico/ científicos. Quaisquer dúvidas terão de ser colocadas ao docente.
+
+% -------------- BIBLIOGRAFIA -------------
+\renewcommand\bibname{Referências} % mudar nome capítulo 
+\addcontentsline{toc}{chapter}{Referências}
+\bibliographystyle{ieee} 
+\bibliography{bibliografia/Referencias}   
+
+% --------------- ANEXOS -----------------
+\begin{appendix}
+
+\section*{Anexo}\label{ConteudoAnexos}
+
+Aqui são apresentados exemplos de figuras e tabelas.
+
+Exemplo de uma figura:\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{figuras/CMMI.pdf}
+	\caption{Exemplo de imagem: \small{\textit{Fonte: 	\cite{CMMI2010}}}}
+	\label{fig:figura1}
+\end{figure}
+
+
+Exemplo de uma tabela:\\
+
+\begin{table}[h]
+	\centering
+	\caption{Exemplo de tabela.}
+	\begin{tabular}{p{1.5in}p{1.5in}}		
+		\toprule
+	
+		\textbf{UC's}  & 	 \textbf{Ano} \\ 
+		\midrule
+		QESOFT & Primeiro \\
+		Tese & Segundo \\
+		\bottomrule
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+\end{appendix}
+\end{document}
+
