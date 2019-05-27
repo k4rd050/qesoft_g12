@@ -4,7 +4,7 @@
 %---(C) QESOFT, Isabel Sampaio (ais@isep.ipp.pt), 2019 ---
 %=============================================
 
-%----------tipo de documento------------------l
+%----------tipo de documento------------------
 \documentclass[openany,10pt,a4paper]{article}
 
 % ----------------------
@@ -95,7 +95,7 @@ bottom=1.5 cm,
 \begin{document}
 \pagenumbering{arabic}
 
-\title{\textbf{Título}}
+\title{\textbf{Uma visão sobre a Qualidade de Processo e de Produto em ambiente académico}}
 \author{João Cardoso, \textit{1150943} \\ Sofia Silva, \textit{1150690} \\ Tiago Leite, \textit{1150780}}
 \date{}
 
@@ -121,13 +121,22 @@ Nível a usar apenas quando for estritamente necessário.
 O relatório pode seguir a estrutura do próprio trabalho. Deverá existir uma secção que apresente o projecto escolhido para ser avaliado e a justificação da escolha desse projecto.
 
 \section{Avaliação e Outras Secções}
-O relatório deve descrever toda a avaliação realizada e os resultados dessa avaliação. A avaliação do processo terá de ser realizada usando o CMMI \cite{CMMI2010} e de acordo com a abordagem indicada nas aulas e complementada com os documentos fornecidos, incluindo este. A avaliação do produto seguirá o modelo OMG a ser indicado. Usar uma secção para cada avaliação.
+O relatório deve descrever toda a avaliação realizada e os resultados dessa avaliação. A avaliação do processo terá de ser realizada usando o CMMI e de acordo com a abordagem indicada nas aulas e complementada com os documentos fornecidos, incluindo este. A avaliação do produto seguirá o modelo OMG a ser indicado. Usar uma secção para cada avaliação.
 
 O trabalho requer o desenvolvimento de um questionário para cada avaliação. Os questionários devem ser desenvolvidos de forma rigorosa como qualquer questionário usado em investigação, conforme referido nas aulas e documentos fornecidos. Documentar devidamente o desenvolvimento dos questionários em secção específica para o efeito. Os questionários ficarão em anexo e/ou online.
 
 Cada grupo tem de avaliar um projecto escolhido por si e que possua “fases” razoavelmente definidas, tal como indicado no enunciado.
 
 Apresentar muito sucintamente as principais limitações acerca da forma como as avaliações foram realizadas. Incluir uma secção com a identificação das áreas do processo/produto a melhorar ordenadas por prioridade, e devidamente justificado. Nessa secção ou noutra deverá ser feito a análise integrada das duas avaliações. A aplicação das ferramentas deve ser resumida numa página, máximo duas páginas.
+
+\subsection{Qualidade do Processo}
+Nesta subsecção é apresentada, tal como pedido, uma análise informal ao processo utilizado no decorrer do projeto escolhido (LAPR4). Enquadra-se primeiramente o conceito de qualidade de processo e um exemplo da sua aplicação num caso real com recurso ao CMMI For Development.
+Os modelos CMMI(\textit{Capability Maturity Model Integration}), desenvolvidos por equipas multidisciplinares da Universidade de Carnegie Mellon, incluindo o SEI (\textit{Software Engineering Institute}), são coleções de boas práticas que procuram ajudar as organizações a melhorar os seus processos. O modelo CMMI-DEV (CMMI for Development) é especialmente ligado aos processos de desenvolvimento de produtos e serviços, daí a sua utilização no meio do desenvolvolvimento de software. Este possui orientações com foco na melhoria da qualidade final do produto para cumprir as necessidades dos consumidores finais. \cite{CMMIProductTeam2010} 
+A análise da qualidade de processo a seguir apresentada teve como base uma representação discreta com foco nos níveis 2 e 3 de maturidade e em 7 e 11 áreas de processo para cada um desses níveis respetivamente. Para a obtenção de resultados foi elaborado um questionário (em anexo XPTO) 
+
+
+
+\subsection{Qualidade do Produto}
 
 \section{Conclusões}
 
@@ -137,13 +146,31 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 \renewcommand\bibname{Referências} % mudar nome capítulo 
 \addcontentsline{toc}{chapter}{Referências}
 \bibliographystyle{ieee} 
-\bibliography{bibliografia/Referencias}   
+\bibliography{bibliografia/References}   
 
 % --------------- ANEXOS -----------------
 \begin{appendix}
 
-\section*{Anexo}\label{ConteudoAnexos}
+\section*{Anexos}\label{ConteudoAnexos}
 
+Exemplo de uma tabela:\\
+
+\begin{table}[h]
+	\centering
+	\caption{Exemplo de tabela.}
+	\begin{tabular}{p{1.5in}p{1.5in}}		
+		\toprule
+	
+		\textbf{UC's}  & 	 \textbf{Ano} \\ 
+		\midrule
+		QESOFT & Primeiro \\
+		Tese & Segundo \\
+		\bottomrule
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+\section*{Exemplos LaTex}\label{ExemplosLatex}
 Aqui são apresentados exemplos de figuras e tabelas.
 
 Exemplo de uma figura:\\
