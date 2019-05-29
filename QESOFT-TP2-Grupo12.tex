@@ -272,8 +272,9 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 % -------------- BIBLIOGRAFIA -------------
 \renewcommand\bibname{Referências} % mudar nome capítulo 
 \addcontentsline{toc}{chapter}{Referências}
-\bibliographystyle{ieee} 
-\bibliography{bibliografia/References}   
+\setlength{\parskip}{0.7em}
+\bibliographystyle{IEEEtran}
+\bibliography{biblist.bib}
 
 % --------------- ANEXOS -----------------
 \begin{appendix}
@@ -1057,12 +1058,13 @@ analisados?
 	\label{tab:tabela1}
 \end{table}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\linewidth]{figuras/CMMI.pdf}
-	\caption{Exemplo de imagem: \small{\textit{Fonte: 	\cite{CMMI2010}}}}
-	\label{fig:figura1}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{}
+%	\caption{Exemplo de imagem: \small{\textit{Fonte: 	\cite{CMMI2010}}}}
+%	\label{fig:figura1}
+%\end{figure}
+
 
 \end{appendix}
 \end{document}
