@@ -1,6 +1,8 @@
 
-bibliografia/
 
-figuras/
-
-*.pdf
+*.aux
+.vscode
+*.gz
+*.fls
+*.fdb_latexmk
+*.log
