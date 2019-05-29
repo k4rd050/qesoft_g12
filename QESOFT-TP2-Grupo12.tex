@@ -132,7 +132,76 @@ Apresentar muito sucintamente as principais limitações acerca da forma como as
 \subsection{Qualidade do Processo}
 Nesta subsecção é apresentada, tal como pedido, uma análise informal ao processo utilizado no decorrer do projeto escolhido (LAPR4). Enquadra-se primeiramente o conceito de qualidade de processo e um exemplo da sua aplicação num caso real com recurso ao CMMI For Development.
 Os modelos CMMI(\textit{Capability Maturity Model Integration}), desenvolvidos por equipas multidisciplinares da Universidade de Carnegie Mellon, incluindo o SEI (\textit{Software Engineering Institute}), são coleções de boas práticas que procuram ajudar as organizações a melhorar os seus processos. O modelo CMMI-DEV (CMMI for Development) é especialmente ligado aos processos de desenvolvimento de produtos e serviços, daí a sua utilização no meio do desenvolvolvimento de software. Este possui orientações com foco na melhoria da qualidade final do produto para cumprir as necessidades dos consumidores finais. \cite{CMMIProductTeam2010} 
-A análise da qualidade de processo a seguir apresentada teve como base uma representação discreta com foco nos níveis 2 e 3 de maturidade e em 7 e 11 áreas de processo para cada um desses níveis respetivamente. Para a obtenção de resultados foi elaborado um questionário (em anexo XPTO) 
+A análise da qualidade de processo a seguir apresentada teve como base uma representação discreta com foco nos níveis 2 e 3 de maturidade e em 7 e 11 áreas de processo para cada um desses níveis respetivamente. Para a obtenção de resultados foi elaborado um questionário (em anexo) com um conjunto questões para cada uma das áreas de processo, estando dessa forma dividido. Para cada um dos processos existem 4 possíveis respostas: Totalmente Implementado, Implementado Parcialmente, Não Implementado ou Não Sei caso não seja aplicável ou seja desconhecido.
+
+\subsubsection{Resultados}
+Nesta subsecção são apresentados os resultados relativos ao questionário desenvolvido. \\
+De forma a facilitar a análise dos resultados, foi organizado o resumo para cada área de processo, apresentando o seu objetivo, as metas definidas, assim como as respetivas avaliações seguindo os critérios definidos (também em anexo). \\
+
+\textbf{Gestão de Configuração} \\
+\textbf{Objetivo:} Permitir a integração contínua dos vários componentes de software em que as mudanças são devidamente documentadas \\
+
+\begin{table}[]
+    \centering
+    \caption{Gestão de Configuração - Resultados}
+    \begin{tabular}{p{2in}|p{2in}|p{2in}}
+        \hline	
+		\textbf{Meta} & \textbf{Questões} & \textbf{Avaliação} \\ \hline
+		Identificar e definir as configurações disponíveis & 1 e 2 & TODO \\ \hline
+		Monitorizar as alterações de configuração  & 3 e 4 & TODO \\ \hline
+		Documentar as alterações de configuração  & 5, 6 e 7 & TODO \\ \hline
+    \end{tabular}
+    \label{tab:analise-gestconfig}
+\end{table}
+
+\textbf{Medição e Análise}  \\
+\textbf{Objetivo:} Permitir à organização realizar uma medição da sua qualidade
+
+\begin{table}[]
+    \centering
+    \caption{Medição e Análise - Resultados}
+    \begin{tabular}{p{2in}|p{2in}|p{2in}}
+         \hline	
+		\textbf{Meta} & \textbf{Questões} & \textbf{Avaliação} \\ \hline
+		Definir mecanismos de medição & 8, 9, 10, 11 & TODO \\ \hline
+		Pôr em prática os mecanismos definidos  & 12, 13 & TODO \\ \hline
+		Os mecanismos são utilizados ativamente na organização & 14 e 15 & TODO \\ \hline
+    \end{tabular}
+    \label{tab:analise-medicaoanalise}
+\end{table}
+
+\textbf{Monitorização e Controlo do Projeto}  \\
+\textbf{Objetivo:} Permitir à organização uma monitorização do progresso dos projetos em curso
+    
+\begin{table}[]
+    \centering
+    \caption{Monitorização e Controlo do Projeto - Resultados}
+    \begin{tabular}{p{2in}|p{2in}|p{2in}}
+         \hline	
+		\textbf{Meta} & \textbf{Questões} & \textbf{Avaliação} \\ \hline
+		Criar métricas de monitorização de progresso de projetos em relação ao planeado & 17, 18, 19 e 20 & TODO \\ \hline
+		Utilizar o controlo do progresso dos projetos para organizar retrospetivas & 21, 22, 23 & TODO \\ \hline
+		Aplicar efetivamente medidas corretivas para os processos negativamente identificados na monitorização & 24 e 25 & TODO \\ \hline
+    \end{tabular}
+    \label{tab:analise-monitorizacao}
+\end{table}
+
+\textbf{Planeamento de Projeto}  \\
+\textbf{Objetivo:} Melhorar a fase de planeamento de projetos da organização
+
+\begin{table}[]
+    \centering
+    \caption{Planeamento de Projeto - Resultados}
+    \begin{tabular}{p{3in}|p{2in}|p{1in}}
+        \hline	
+		\textbf{Meta} & \textbf{Questões} & \textbf{Avaliação} \\ \hline
+		Definir a estrutura de estimativa do planeamento & 26 e 27 & TODO \\ \hline
+		As estimativas são eficazes e mantidas ao longo do projeto & 29 e 30 & TODO \\ \hline
+		Toda a estrutura definida para o planeamento é identificada, analisada e monitorizada & 31, 32, 33, 34, 35 e 36 & TODO \\ \hline
+		Há uma revisão e apoio à execução do planeamento efetuado & 37, 38 e 39
+	\end{tabular}
+    \label{tab:analise-planeamento}
+\end{table}
 
 
 
@@ -396,7 +465,7 @@ O propósito destas regras é estabelecer uma medida padrão de segurança com b
 \end{itemize}
 
 
-Exemplo de uma tabela:\\
+
 
 \begin{table}[h]
 \textbf{Gestão de Configuração}
@@ -475,6 +544,51 @@ interessadas?
 \end{table}
 
 \begin{table}[h]
+\textbf{Monitorização e Controlo do Projeto}
+	\centering
+	\caption{Questionário 1 - Processo - Parte 3}
+	\begin{tabular}{p{3.5in}p{2in}}		
+		\toprule
+		\textbf{Questão}  & \textbf{Avaliação}\\ 
+		\midrule
+		16 – São monitorizados os valores reais dos parâmetros do planeamento do projeto em relação 
+ao plano de projeto? 
+ & TI | IP | NI | NS \\
+        \midrule
+		17 – São monitorizados os compromissos em relação aos identificados no plano de projeto?
+ & TI | IP | NI | NS \\
+		\midrule
+		18 – São Monitorizados os riscos em relação aos identificados no plano do projeto?
+ & TI | IP | NI | NS \\
+		\midrule
+        19 – É monitorizada a gestão de dados do projeto em relação ao plano de projeto?
+ & TI | IP | NI | NS \\
+		\midrule
+		20 – É monitorizado o envolvimento das partes interessadas em relação ao plano de projeto?
+  & TI | IP | NI | NS \\
+		\midrule
+		21 – São revistos periodicamente o progresso, desempenho e as questões críticas do projeto?
+ & TI | IP | NI | NS \\
+		\midrule
+		22 – São revistos em pontos-chave selecionados do projeto, as realizações do projeto e os 
+resultados obtidos?
+ & TI | IP | NI | NS \\
+        \midrule
+        23 – São identificadas e analisadas as questões críticas e determinadas as ações corretivas 
+necessárias para tratar as mesmas?
+ & TI | IP | NI | NS \\
+		\midrule
+		24 – São implementadas ações corretivas para tratar as questões críticas identificadas?
+ & TI | IP | NI | NS \\
+		\midrule
+		25 – As ações corretivas são geridas até à sua conclusão?
+ & TI | IP | NI | NS \\
+		\bottomrule
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+\begin{table}[h]
 \textbf{Planeamento de Projeto}
 	\centering
 	\caption{Questionário 1 - Processo - Parte 4}
@@ -536,7 +650,7 @@ execução do plano é obtido?
 \begin{table}[h]
 \textbf{Garantia da Qualidade de Processo e Produto}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 3}
+	\caption{Questionário 1 - Processo - Parte 5}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -563,7 +677,7 @@ não conformidades com a equipa e os gestores?
 \begin{table}[h]
 \textbf{Gestão de Requisitos}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 5}
+	\caption{Questionário 1 - Processo - Parte 6}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -592,7 +706,7 @@ as exigências?
 \begin{table}[h]
 \textbf{Gestão de Contrato com Fornecedores}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 6}
+	\caption{Questionário 1 - Processo - Parte 7}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -626,7 +740,7 @@ produto adquirido?
 \begin{table}[h]
 \textbf{Análise e Tomada de Decisões}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 7}
+	\caption{Questionário 1 - Processo - Parte 8}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -659,7 +773,7 @@ avaliação?
 \begin{table}[h]
 \textbf{Gestão Integrada do Projeto}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 8}
+	\caption{Questionário 1 - Processo - Parte 9}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -707,7 +821,7 @@ acompanhamento de dependências críticas?
 \begin{table}[h]
 \textbf{Definição dos Processos da Organização}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 9}
+	\caption{Questionário 1 - Processo - Parte 10}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -743,7 +857,7 @@ são estabelecidas e mantidas?
 \begin{table}[h]
 \textbf{Enfoque nos Processos da Organização}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 10}
+	\caption{Questionário 1 - Processo - Parte 11}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -787,7 +901,7 @@ processos em todos os projetos é monitorizada?
 \begin{table}[h]
 \textbf{Formação na Organização}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 11}
+	\caption{Questionário 1 - Processo - Parte 12}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -822,7 +936,7 @@ estabelecida e mantida?
 \begin{table}[h]
 \textbf{Integração de Produto}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 12}
+	\caption{Questionário 1 - Processo - Parte 13}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -870,7 +984,7 @@ entregue ao cliente?
 \begin{table}[h]
 \textbf{Desenvolvimento de Requisitos}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 13}
+	\caption{Questionário 1 - Processo - Parte 14}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -917,7 +1031,7 @@ ambiente do utilizador final são validados?
 \begin{table}[h]
 \textbf{Gestão de Risco}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 13}
+	\caption{Questionário 1 - Processo - Parte 15}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -954,7 +1068,7 @@ atenuação de risco quando necessário?
 \begin{table}[h]
 \textbf{Solução Técnica}
 \centering
-	\caption{Questionário 1 - Processo - Parte 14}
+	\caption{Questionário 1 - Processo - Parte 16}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -993,7 +1107,7 @@ reutilizados com base em critérios estabelecidos?
 \begin{table}[h]
 \textbf{Validação}
 	\centering
-	\caption{Questionário 1 - Processo - Parte 15}
+	\caption{Questionário 1 - Processo - Parte 17}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -1021,7 +1135,7 @@ métodos de validação a serem utilizados?
 \begin{table}[h]
 \textbf{Verificação }
 	\centering
-	\caption{Questionário 1 - Processo - Parte 16}
+	\caption{Questionário 1 - Processo - Parte 18}
 	\begin{tabular}{p{3.5in}p{2in}}		
 		\toprule
 		\textbf{Questão}  & \textbf{Avaliação}\\ 
@@ -1068,4 +1182,3 @@ analisados?
 
 \end{appendix}
 \end{document}
-
