@@ -137,8 +137,135 @@ A análise da qualidade de processo a seguir apresentada teve como base uma repr
 
 
 \subsection{Qualidade do Produto}
+\begin{table}[h]
+	\centering
+	\caption{Regras da caraterística manutenibilidade}
+	\begin{tabular}{|p{3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.4in}|}
+		\hline	
+		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Média} \\ \hline
+		\textbf{ASCMM-MNT-1}: Control Flow Transfer Control Element outside Switch Block & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-2}: Class Element Excessive Inheritance of Class Elements with Concrete Implementation & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-3}: Storable and Member Data Element Initialization with Hard-Coded Literals & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-4}: Callable and Method Control Element Number of Outward Calls & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-5}: Loop Value Update within the Loop & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-6}: Commented-out Code Element Excessive Volume & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-7}: Inter-Module Dependency Cycles & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-8}: Source Element Excessive Size & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-9}: Horizontal Layer Excessive Number & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-10}: Named Callable and Method Control Element Multi-Layer Span & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-11}: Callable and Method Control Element Excessive Cyclomatic Complexity Value & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-12}: Named Callable and Method Control Element with Layer-skipping Call & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-13}: Callable and Method Control Element Excessive Number of Parameters & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-14}: Callable and Method Control Element Excessive Number of Control Elements involving Data Element from Data Manager or File Resource & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-15}: Public Member Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-16}: Method Control Element Usage of Member Element from other Class Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-17}: Class Element Excessive Inheritance Level & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-18}: Class Element Excessive Number of Children & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-19}: Named Callable and Method Control Element Excessive Similarity & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-20}: Unreachable Named Callable or Method Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+
+\begin{table}[h]
+	\centering
+	\caption{Regras da caraterística segurança}
+	\begin{tabular}{|p{3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.4in}|}
+		\hline	
+		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Média} \\ \hline
+		\textbf{ASCMM-CWE-22}: Path Traversal Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-78}: OS Command Injection Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-79}: Cross-site Scripting Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-89}: SQL Injection Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-99}: Name or Reference Resolution Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-120}: Buffer Copy without Checking Size of Input & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-129}: Array Index Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-134}: Format String Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-252-resource}: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Platform Resource & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-327}: Broken or Risky Cryptographic Algorithm Usage & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-396}: Declaration of Catch for Generic Exception & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-397}: Declaration of Throws for Generic Exception & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-434}: File Upload Improper Input Neutralization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-456}: Storable and Member Data Element Missing Initialization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-606}: Unchecked Input for Loop Condition & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-667}: Shared Resource Improper Locking & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-672}: Expired or Released Resource Usage & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-681}: Numeric Types Incorrect Conversion & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-772}: Missing Release of Resource after Effective Lifetime & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-789}: Uncontrolled Memory Allocation & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-798}: Hard-Coded Credentials Usage for Remote Authentication & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\textbf{ASCMM-CWE-835}: Loop with Unreachable Exit Condition ('Infinite Loop') & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+
+\begin{table}[h]
+	\centering
+	\caption{Regras da caraterística eficiencia de performance}
+	\begin{tabular}{|p{3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.4in}|}
+		\hline	
+		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Média} \\ \hline
+		\textbf{ASCPEM-PRF-1}: Static Block Element containing Class Instance Creation Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-2}: Immutable Storable and Member Data Element Creation & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-3}: Static Member Data Element outside of a Singleton Class Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-4}: Data Resource Read and Write Access Excessive Complexity & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-5}: Data Resource Read Access Unsupported by Index Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-6}: Large Data Resource ColumnSet Excessive Number of Index Elements & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-7}: Large Data Resource ColumnSet with Index Element of Excessive Size & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-8}: Control Elements Requiring Significant Resource Element within Control Flow Loop Block & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-9}: Non-stored SQL Callable Control Element with Excessive Number of Data Resource Access & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-10}: Non-SQL Named Callable and Method Control Element with Excessive Number of Data Resource Access & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-11}: Data Access Control Element from Outside Designated Data Manager Component & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-12}: Storable and Member Data Element Excessive Number of Aggregated Storable and Member Data Elements & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-13}: Data Resource Access not using Connection Pooling Capability & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-14}: Storable and Member Data Element Memory Allocation Missing De-allocation Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCPEM-PRF-15}: Storable and Member Data Element Reference Missing De-referencing Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{Regras da caraterística eficiencia de performance}
+	\begin{tabular}{|p{3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.4in}|}
+		\hline	
+		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Média} \\ \hline
+		\textbf{ASCRM-CWE-252-data}: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Data Resource & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-252-resource}: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Platform Resource & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-396}: Declaration of Catch for Generic Exception & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-397}: Declaration of Throws for Generic Exception & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-456}: Storable and Member Data Element Missing Initialization & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-674}: Uncontrolled Recursion & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-704}: Incorrect Type Conversion or Cast & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-772}: Missing Release of Resource after Effective Lifetime & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-CWE-788}: Memory Location Access After End of Buffer & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-1}: Empty Exception Block & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-2}: Serializable Storable Data Element without Serialization Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-3}: Serializable Storable Data Element with non-Serializable Item Elements & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-4}: Persistent Storable Data Element without Proper Comparison Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-5}: Runtime Resource Management Control Element in a Component Built to Run on Application Servers & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-6}: Storable or Member Data Element containing Pointer Item Element without Proper Copy Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-7}: Class Instance Self Destruction Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-8}: Named Callable and Method Control Elements with Variadic Parameter Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-9}: Float Type Storable and Member Data Element Comparison with Equality Operator & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-10}: Data Access Control Element from Outside Designated Data Manager Component & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-11}: Named Callable and Method Control Element in Multi-Thread Context with non-Final Static Storable or Member Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-12}: Singleton Class Instance Creation without Proper Lock Element Management & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-13}: Inter-Module Dependency Cycles & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-14}: Parent Class Element with References to Child Class Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-15}: Class Element with Virtual Method Element without Virtual Destructor & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-16}: Parent Class Element without Virtual Destructor Method Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-17}: Child Class Element without Virtual Destructor unlike its Parent Class Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-18}: Storable and Member Data Element Initialization with Hard-Coded Network Resource Configuration Data & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCRM-RLB-19}: Synchronous Call Time-Out Absence & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+	\end{tabular} 
+	\label{tab:tabela1}
+\end{table}
 
 \section{Conclusões}
+
 
 As principais conclusões serão apresentadas aqui. Notar que apenas interessam aspectos técnico/ científicos. Quaisquer dúvidas terão de ser colocadas ao docente.
 
@@ -153,9 +280,122 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 
 \section*{Anexos}\label{ConteudoAnexos}
 
-% --------------- Questionário Qualidade de Processo -----------------
+\subsection{Anexo 2}
+\textbf{Questionário Qualidade do Produto}\\
+De modo a analisar a avaliar a qualidade do produto, em foi desenvolvido o seguinte questionário que se encontra dividido em quatro grupos, representando medidas padrão: Manutenibilidade, Segurança, Eficiência da Performance e Fiabilidade.
+Cada grupo contém um conjunto de regras de qualidade, para o qual terá de ser indicado o número de violações da mesma.
 
-\subsection*{Qualidade do processo - Questionário}
+Grupo 1: Manutenibilidade
+O propósito destas regras é estabelecer uma medida padrão de manutenibilidade com base na deteção de violações de boas práticas arquiteturais e de codificação que podem resultar em operações não confiáveis, como interrupções, corrupção de dados e longa recuperação de falhas do sistema.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item ASCMM-MNT-1: Control Flow Transfer Control Element outside Switch Block
+	\item ASCMM-MNT-2: Class Element Excessive Inheritance of Class Elements with Concrete Implementation
+	\item ASCMM-MNT-3: Storable and Member Data Element Initialization with Hard-Coded Literals
+	\item ASCMM-MNT-4: Callable and Method Control Element Number of Outward Calls
+	\item ASCMM-MNT-5: Loop Value Update within the Loop
+	\item ASCMM-MNT-6: Commented-out Code Element Excessive Volume
+	\item ASCMM-MNT-7: Inter-Module Dependency Cycles
+	\item ASCMM-MNT-8: Source Element Excessive Size
+	\item ASCMM-MNT-9: Horizontal Layer Excessive Number
+	\item ASCMM-MNT-10: Named Callable and Method Control Element Multi-Layer Span
+	\item ASCMM-MNT-11: Callable and Method Control Element Excessive Cyclomatic Complexity Value
+	\item ASCMM-MNT-12: Named Callable and Method Control Element with Layer-skipping Call
+	\item ASCMM-MNT-13: Callable and Method Control Element Excessive Number of Parameters
+	\item ASCMM-MNT-14: Callable and Method Control Element Excessive Number of Control Elements involving Data Element from Data Manager or File Resource
+	\item ASCMM-MNT-15: Public Member Element	
+	\item ASCMM-MNT-16: Method Control Element Usage of Member Element from other Class Element
+	\item ASCMM-MNT-17: Class Element Excessive Inheritance Level
+	\item ASCMM-MNT-18: Class Element Excessive Number of Children
+	\item ASCMM-MNT-19: Named Callable and Method Control Element Excessive Similarity
+	\item ASCMM-MNT-20: Unreachable Named Callable or Method Control Element
+\end{itemize}
+
+Grupo 2: Segurança
+O propósito destas regras é estabelecer uma medida padrão de segurança com base na deteção de violações de boas práticas arquiteturais e de codificação que poderão resultar na entrada não autorizada em sistemas, roubo de informações confidenciais, e o comprometimento malicioso da integridade do sistema.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item ASCSM-CWE-22: Path Traversal Improper Input Neutralization
+	\item ASCSM-CWE-78: OS Command Injection Improper Input Neutralization
+	\item ASCSM-CWE-79: Cross-site Scripting Improper Input Neutralization
+	\item ASCSM-CWE-89: SQL Injection Improper Input Neutralization
+	\item ASCSM-CWE-99: Name or Reference Resolution Improper Input Neutralization
+	\item ASCSM-CWE-120: Buffer Copy without Checking Size of Input
+	\item ASCSM-CWE-129: Array Index Improper Input Neutralization
+	\item ASCSM-CWE-134: Format String Improper Input Neutralization
+	\item ASCSM-CWE-252-resource: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Platform Resource
+	\item ASCSM-CWE-327: Broken or Risky Cryptographic Algorithm Usage
+	\item ASCSM-CWE-396: Declaration of Catch for Generic Exception
+	\item ASCSM-CWE-397: Declaration of Throws for Generic Exception
+	\item ASCSM-CWE-434: File Upload Improper Input Neutralization
+	\item ASCSM-CWE-456: Storable and Member Data Element Missing Initialization
+	\item ASCSM-CWE-606: Unchecked Input for Loop Condition
+	\item ASCSM-CWE-667: Shared Resource Improper Locking
+	\item ASCSM-CWE-672: Expired or Released Resource Usage
+	\item ASCSM-CWE-681: Numeric Types Incorrect Conversion
+	\item ASCSM-CWE-772: Missing Release of Resource after Effective Lifetime
+	\item ASCSM-CWE-789: Uncontrolled Memory Allocation
+	\item ASCSM-CWE-798: Hard-Coded Credentials Usage for Remote Authentication
+	\item ASCSM-CWE-835: Loop with Unreachable Exit Condition ('Infinite Loop')
+\end{itemize} 
+
+Grupo 3: Eficiência de Performance
+O propósito destas regras é estabelecer uma medida padrão de segurança com base na deteção de violações de boas práticas arquiteturais e de codificação que poderão resultar numa operação ineficiente, como a degradação do desempenho ou uso excessivo de recursos do processador.
+\begin{itemize}	
+\setlength\itemsep{0em}
+	\item ASCPEM-PRF-1: Static Block Element containing Class Instance Creation Control Element
+	\item ASCPEM-PRF-2: Immutable Storable and Member Data Element Creation
+	\item ASCPEM-PRF-3: Static Member Data Element outside of a Singleton Class Element
+	\item ASCPEM-PRF-4: Data Resource Read and Write Access Excessive Complexity
+	\item ASCPEM-PRF-5: Data Resource Read Access Unsupported by Index Element
+	\item ASCPEM-PRF-6: Large Data Resource ColumnSet Excessive Number of Index Elements
+	\item ASCPEM-PRF-7: Large Data Resource ColumnSet with Index Element of Excessive Size
+	\item ASCPEM-PRF-8: Control Elements Requiring Significant Resource Element within Control Flow Loop Block
+	\item ASCPEM-PRF-9: Non-stored SQL Callable Control Element with Excessive Number of Data Resource Access
+	\item ASCPEM-PRF-10: Non-SQL Named Callable and Method Control Element with Excessive Number of Data Resource Access
+	\item ASCPEM-PRF-11: Data Access Control Element from Outside Designated Data Manager Component
+	\item ASCPEM-PRF-12: Storable and Member Data Element Excessive Number of Aggregated Storable and Member Data Elements
+	\item ASCPEM-PRF-13: Data Resource Access not using Connection Pooling Capability
+	\item ASCPEM-PRF-14: Storable and Member Data Element Memory Allocation Missing De-allocation Control Element
+	\item ASCPEM-PRF-15: Storable and Member Data Element Reference Missing De-referencing Control Element
+\end{itemize}
+
+Grupo 4: Fiabilidade
+O propósito destas regras é estabelecer uma medida padrão de segurança com base na deteção de violações de boas práticas arquiteturais e de codificação que poderão resultar em operações não confiáveis, como interrupções, corrupção de dados e recuperação de falhas do sistema.
+\begin{itemize}
+	\setlength\itemsep{0em}
+	\item ASCRM-CWE-252-data: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Data Resource
+	\item ASCRM-CWE-252-resource: Unchecked Return Parameter Value of named Callable and Method Control Element with Read, Write, and Manage Access to Platform Resource
+	\item ASCRM-CWE-396: Declaration of Catch for Generic Exception
+	\item ASCRM-CWE-397: Declaration of Throws for Generic Exception
+	\item ASCRM-CWE-456: Storable and Member Data Element Missing Initialization
+	\item ASCRM-CWE-674: Uncontrolled Recursion
+	\item ASCRM-CWE-704: Incorrect Type Conversion or Cast
+	\item ASCRM-CWE-772: Missing Release of Resource after Effective Lifetime
+	\item ASCRM-CWE-788: Memory Location Access After End of Buffer
+	\item ASCRM-RLB-1: Empty Exception Block
+	\item ASCRM-RLB-2: Serializable Storable Data Element without Serialization Control Element
+	\item ASCRM-RLB-3: Serializable Storable Data Element with non-Serializable Item Elements
+	\item ASCRM-RLB-4: Persistent Storable Data Element without Proper Comparison Control Element
+	\item ASCRM-RLB-5: Runtime Resource Management Control Element in a Component Built to Run on Application Servers
+	\item ASCRM-RLB-6: Storable or Member Data Element containing Pointer Item Element without Proper Copy Control Element
+	\item ASCRM-RLB-7: Class Instance Self Destruction Control Element
+	\item ASCRM-RLB-8: Named Callable and Method Control Elements with Variadic Parameter Element
+	\item ASCRM-RLB-9: Float Type Storable and Member Data Element Comparison with Equality Operator
+	\item ASCRM-RLB-10: Data Access Control Element from Outside Designated Data Manager Component
+	\item ASCRM-RLB-11: Named Callable and Method Control Element in Multi-Thread Context with non-Final Static Storable or Member Element
+	\item ASCRM-RLB-12: Singleton Class Instance Creation without Proper Lock Element Management
+	\item ASCRM-RLB-13: Inter-Module Dependency Cycles
+	\item ASCRM-RLB-14: Parent Class Element with References to Child Class Element
+	\item ASCRM-RLB-15: Class Element with Virtual Method Element without Virtual Destructor
+	\item ASCRM-RLB-16: Parent Class Element without Virtual Destructor Method Element
+	\item ASCRM-RLB-17: Child Class Element without Virtual Destructor unlike its Parent Class Element
+	\item ASCRM-RLB-18: Storable and Member Data Element Initialization with Hard-Coded Network Resource Configuration Data
+	\item ASCRM-RLB-19: Synchronous Call Time-Out Absence
+\end{itemize}
+
+
+Exemplo de uma tabela:\\
 
 \begin{table}[h]
 \textbf{Gestão de Configuração}
