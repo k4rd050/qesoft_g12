@@ -46,7 +46,8 @@ bottom=1.5 cm,
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{subcaption}
-
+\usepackage{longtable}
+\usepackage{xcolor}
 \usepackage{tabu}
 \usepackage{tabulary}
 
@@ -141,7 +142,7 @@ De forma a facilitar a análise dos resultados, foi organizado o resumo para cad
 \textbf{Gestão de Configuração} \\
 \textbf{Objetivo:} Permitir a integração contínua dos vários componentes de software em que as mudanças são devidamente documentadas \\
 
-\begin{table}[]
+\begin{table}[h]
     \centering
     \caption{Gestão de Configuração - Resultados}
     \begin{tabular}{p{2in}|p{2in}|p{2in}}
@@ -157,7 +158,7 @@ De forma a facilitar a análise dos resultados, foi organizado o resumo para cad
 \textbf{Medição e Análise}  \\
 \textbf{Objetivo:} Permitir à organização realizar uma medição da sua qualidade
 
-\begin{table}[]
+\begin{table}[h]
     \centering
     \caption{Medição e Análise - Resultados}
     \begin{tabular}{p{2in}|p{2in}|p{2in}}
@@ -173,7 +174,7 @@ De forma a facilitar a análise dos resultados, foi organizado o resumo para cad
 \textbf{Monitorização e Controlo do Projeto}  \\
 \textbf{Objetivo:} Permitir à organização uma monitorização do progresso dos projetos em curso
     
-\begin{table}[]
+\begin{table}[h]
     \centering
     \caption{Monitorização e Controlo do Projeto - Resultados}
     \begin{tabular}{p{2in}|p{2in}|p{2in}}
@@ -206,36 +207,34 @@ De forma a facilitar a análise dos resultados, foi organizado o resumo para cad
 
 
 \subsection{Qualidade do Produto}
-De modo a avaliar a qualidade do produto, foi definido o questionário presente no anexo \textbf{X}, que se baseou na especificação dos documentos do Object Management Group (OMG). Assim, foram selecionadas 5 classes aleatórias de modo a contabilizar o número de ocorrencia de cada regra definida no questionário. 
+De modo a avaliar a qualidade do produto, foi definido o questionário presente no anexo \textbf{X}, baseado na especificação definida nos padrões da Object Management Group (OMG). Como o projeto escolhido para a análise contém 793 classes de código java, foram selecionadas 5 classes aleatórias para contabilizar o número de ocorrencias de cada regra definida no questionário. As classes selecionadas são: BeanShellLoader(C1), HandlerUserChatDTO(C2), PdfExport(C3), ThreadExport(C4) e UnlinkExportDataAction(C5).
 
-
-
-\begin{table}[h]
-	\centering
+\begin{longtable}%[ht]
+	%\centering
 	\caption{Regras da caraterística manutenibilidade}
 	\begin{tabular}{|p{3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.3in}|p{0.4in}|}
 		\hline	
-		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Média} \\ \hline
+		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
 		\textbf{ASCMM-MNT-1}: Control Flow Transfer Control Element outside Switch Block & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-2}: Class Element Excessive Inheritance of Class Elements with Concrete Implementation & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-2}: Class Element Excessive Inheritance of Class Elements with Concrete Implementation & 0 & 2 & 0 & 1 & 0 & 2 \\ \hline
 \textbf{ASCMM-MNT-3}: Storable and Member Data Element Initialization with Hard-Coded Literals & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-4}: Callable and Method Control Element Number of Outward Calls & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textcolor{red}{\textbf{ASCMM-MNT-4}}: Callable and Method Control Element Number of Outward Calls & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \textbf{ASCMM-MNT-5}: Loop Value Update within the Loop & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-6}: Commented-out Code Element Excessive Volume & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-7}: Inter-Module Dependency Cycles & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-6}: Commented-out Code Element Excessive Volume & 0 & 2 & 0 & 0 & 0 & 2 \\ \hline
+\textcolor{red}{\textbf{ASCMM-MNT-7}}: Inter-Module Dependency Cycles & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \textbf{ASCMM-MNT-8}: Source Element Excessive Size & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-9}: Horizontal Layer Excessive Number & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-10}: Named Callable and Method Control Element Multi-Layer Span & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-11}: Callable and Method Control Element Excessive Cyclomatic Complexity Value & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-12}: Named Callable and Method Control Element with Layer-skipping Call & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-13}: Callable and Method Control Element Excessive Number of Parameters & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-14}: Callable and Method Control Element Excessive Number of Control Elements involving Data Element from Data Manager or File Resource & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-15}: Public Member Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-16}: Method Control Element Usage of Member Element from other Class Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textcolor{red}{\textbf{ASCMM-MNT-9}}: Horizontal Layer Excessive Number & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textcolor{red}{\textbf{ASCMM-MNT-10}}: Named Callable and Method Control Element Multi-Layer Span & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-11}: Callable and Method Control Element Excessive Cyclomatic Complexity Value & 0 & 0 & 2 & 0 & 0 & 2 \\ \hline
+\textcolor{red}{\textbf{ASCMM-MNT-12}}: Named Callable and Method Control Element with Layer-skipping Call & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-13}: Callable and Method Control Element Excessive Number of Parameters & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
+\textbf{ASCMM-MNT-14}: Callable and Method Control Element Excessive Number of Control Elements involving Data Element from Data Manager or File Resource & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
+\textbf{ASCMM-MNT-15}: Public Member Element & 0 & 0 & 4 & 0 & 0 & 4 \\ \hline
+\textbf{ASCMM-MNT-16}: Method Control Element Usage of Member Element from other Class Element & 0 & 3 & 5 & 4 & 0 & 4 \\ \hline
 \textbf{ASCMM-MNT-17}: Class Element Excessive Inheritance Level & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-18}: Class Element Excessive Number of Children & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-19}: Named Callable and Method Control Element Excessive Similarity & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textbf{ASCMM-MNT-20}: Unreachable Named Callable or Method Control Element & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-18}: Class Element Excessive Number of Children & 0 & 0 & 1 & 0 & 0 & 0 \\ \hline
+\textbf{ASCMM-MNT-19}: Named Callable and Method Control Element Excessive Similarity & 0 & 0 & 3 & 0 & 0 & 3 \\ \hline
+\textbf{ASCMM-MNT-20}: Unreachable Named Callable or Method Control Element & 0 & 0 & 2 & 0 & 2 & 2 \\ \hline
 	\end{tabular} 
 	\label{tab:tabela1}
 \end{table}
