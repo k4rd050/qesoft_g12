@@ -104,6 +104,7 @@ bottom=1.5 cm,
 
 % -------------- SECÇÕES ---------------
 \section{Introdução}
+Este trabalho foi realizado no âmbito da unidade curricular de Qualidade na Engenharia de Software com o objetivo de avaliar a qualidade do software de um projeto desenvolvido. A avaliação realizada foi dividida em duas partes, a avaliação do processo, usando o modelo CMMI e a avaliação do produto, usando o modelo OMG.\\
 
 Para este relatório interessam apenas aspectos técnico/científicos. Indicar o objectivo. Existem unicamente 3 níveis para as secções. Não podem existir linhas em branco (parágrafos vazios). O relatório tem de seguir obrigatoriamente este modelo, logo não pode ser alterado, exceptuando-se pela adição de (sub)secções que os autores considerem ser necessárias, mas sempre sem ultrapassar os 3 níveis como referido. A introdução nunca poderá ultrapassar a primeira página.
 
@@ -119,7 +120,8 @@ Nível a usar quando necessário.
 Nível a usar apenas quando for estritamente necessário.
 
 \section{Escolha do Projecto}
-O relatório pode seguir a estrutura do próprio trabalho. Deverá existir uma secção que apresente o projecto escolhido para ser avaliado e a justificação da escolha desse projecto.
+O projeto escolhido para ser avaliado na vertente do processo e produto foi o projeto de Laboratório/Projeto IV, realizado no ano letivo de 2015/2016 na licenciatura em Engenharia Informática, com o objetivo de desenvolver uma folha de cálculo complexa. Todos os elementos do grupo possuem conhecimento sobre o projeto desenvolvido. JUSTIFICAR ESCOLHA??
+
 
 \section{Avaliação e Outras Secções}
 O relatório deve descrever toda a avaliação realizada e os resultados dessa avaliação. A avaliação do processo terá de ser realizada usando o CMMI e de acordo com a abordagem indicada nas aulas e complementada com os documentos fornecidos, incluindo este. A avaliação do produto seguirá o modelo OMG a ser indicado. Usar uma secção para cada avaliação.
@@ -303,22 +305,17 @@ Criar plano de verificação de produto & 133, 135 e 136 & NSat \\
 Assegurar a realização da verificação dos produtos e analisar os seus resultados & 134, 137, 138, 139 e 140 & NSat \\
 \end{tabular}
 
-\subsubsection{Análise de Resultados}
-Depois de apresentados os resultados relativos a cada área de processo com base no questionário efetuado, pode-se partir para algumas conclusões sobre a qualidade do processo utilizado no desenvolvimento do projeto em análise (LAPR4).
-Como se pode verificar, apenas uma das áreas de processo foi satisfeita, a gestão de requisitos. Apesar que estes resultados podem ser enganosos, uma vez que, apesar de terem havido muitas práticas parcialmente implementadas, seguindo os critérios de classificação em anexo, ainda assim as metas respetivas a essas práticas são consideradas não satisfeitas.
-Caso os critérios não fossem tão rigorosos era possível encontrar bastantes mais metas "satisfeitas parcialmente" o que se refletiria em áreas de processo com melhor classificação.
-No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo é satisfeita. Isto deve-se a que a unidade curricular de LAPR4 à semelhança com os outros LAPR, baseia-se muito no contacto entre Product Owner e equipa de desenvolvimento para haver um constante levantamento de requisitos para assim satisfazer o método iterativo de desenvolvimento de software.
-O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das prátas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificiação final da meta e área de processo.
-
 \subsection{Qualidade do Produto}
-De modo a avaliar a qualidade do produto, foi definido o questionário presente no anexo \textbf{X}, baseado na especificação definida nos padrões da Object Management Group (OMG). Como o projeto escolhido para a análise contém 793 classes de código java, foram selecionadas 5 classes aleatórias para contabilizar o número de ocorrencias de cada regra definida no questionário. As classes selecionadas são: BeanShellLoader(C1), HandlerUserChatDTO(C2), PdfExport(C3), ThreadExport(C4) e UnlinkExportDataAction(C5).
+O modelo de qualidade do produto pode ser avaliadado por um conjunto de caraterísticas, como apresentadas na \textcolor{red}{figura (nao esquecer)}. Estas caraterísticas estão contempladas no modelo de qualidade ISSO/IEC 25000 e para esta análise foram utilizadas a Manutenibilidade, Segurança, Eficiência de Performance e Fiabilidade. Assim, foi definido o questionário presente no anexo \textcolor{red}{X}, baseado na especificação definida nos padrões da Object Management Group (OMG). \\
+O projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem java, tendo sido assim aplicada a 
+\textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrencias de cada métrica definida no questionário. As classes selecionadas foram: BeanShellLoader(C1), HandlerUserChatDTO(C2), PdfExport(C3), ThreadExport(C4) e UnlinkExportDataAction(C5).\\
 
 \subsubsection{Manutenibilidade}
-%\begin{table}[h]
-%	\centering
+Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que fazem com que o software desenvovlido seja dificil de ser modificado, aumenta o esforço do seu suporte e da sua adaptação a novos requisitos. Estas violações podem resultar em operações não confiáveis, como interrupções, corrupção de dados e longa recuperação de falhas do sistema \cite{OMG_Maintainability}.
+
 	\begin{longtable}{p{1.2in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
-		\caption{Regras da caraterística manutenibilidade}
-		\label{variability_impl_mech}
+		\caption{Número de violações em cada classe por regra de manutenibilidade}
+		\label{table_manutenibilidade}
 		\endhead
 		\hline
 		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
@@ -342,16 +339,16 @@ De modo a avaliar a qualidade do produto, foi definido o questionário presente 
 		ASCMM-MNT-18 & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
 		ASCMM-MNT-19 & 0 & 0 & 3 & 0 & 0 & 3 \\ \hline
 		ASCMM-MNT-20 & 0 & 0 & 2 & 0 & 2 & 2 \\ \hline
-	%\label{tab:tabela1}
-	\end{longtable} 
-%\end{table}
+	\end{longtable}
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_manutenibilidade}, seguiu-se o calculo da medida base de manutenibilidade. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 31.
+$$\sum_{n=1}^{20} CISQ - MntME_{20} = 31$$
 
 \subsubsection{Segurança}
-
+Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que fazem com que o software permita a entrada não autorizada em sistemas, roubo de informações confidenciais, entre outros \cite{OMG_Security}. A partir desta medida é possível saber o grau de proteção que o sistema tem, para que pessoas e/ou outros produtos ou sistemas tenham o grau de acesso aos dados adequado aos seus tipos e níveis de autorização \cite{security_iso}.
 \begin{samepage}
-\begin{longtable}{p{1.3in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
+\begin{longtable}{p{1.9in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
 		\caption{Regras da caraterística segurança}
-		\label{variability_impl_mech}
+		\label{table_security}
 		\endhead
 		\hline	
 		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
@@ -379,12 +376,14 @@ De modo a avaliar a qualidade do produto, foi definido o questionário presente 
 		ASCMM-CWE-835 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \end{longtable}
 \end{samepage}
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_security}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 5.
+$$\sum_{n=1}^{22} CISQ - SecME_{22} = 5$$
 
 \subsubsection{Eficiência de Performance}
-
+Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que poderão resultar numa operação ineficiente, como a degradação do desempenho ou uso excessivo de recursos do processador \cite{OMG_Performance}.
 \begin{longtable}{p{1.3in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
 	\caption{Regras da caraterística eficiencia de performance}
-	\label{variability_impl_mech}
+	\label{table_performance}
 	\endhead
 	\hline	
 	\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
@@ -405,12 +404,14 @@ ASCPEM-PRF-7 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \textcolor{red}{ASCPEM-PRF-15} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 	\end{longtable} 
 
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_performance}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 0.
+$$\sum_{n=1}^{15} CISQ - PrfME_{15} = 0$$
 
 \subsubsection{Fiabilidade}
-
-\begin{longtable}{p{1.6in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
+Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que poderão resultar em operações não confiáveis, como interrupções, corrupção de dados e recuperação de falhas do sistema \cite{OMG_Reliability}. Quanto mais elevado o número de violações, mais provável é, para um determinado período temporal, que o sistema tenha uma falha. 
+\begin{longtable}{p{1.9in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
 	\caption{Regras da caraterística fiabilidade}
-	\label{variability_impl_mech}
+	\label{table_Reliability}
 	\endhead
 	\hline	
 		\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
@@ -443,6 +444,15 @@ ASCRM-RLB-17 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-18 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-19 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \end{longtable} 
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_Reliability}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 0.
+$$\sum_{n=1}^{15} CISQ - PrfME_{15} = 0$$
+
+\subsubsection{Análise de Resultados}
+Depois de apresentados os resultados relativos a cada área de processo com base no questionário efetuado, pode-se partir para algumas conclusões sobre a qualidade do processo utilizado no desenvolvimento do projeto em análise (LAPR4).
+Como se pode verificar, apenas uma das áreas de processo foi satisfeita, a gestão de requisitos. Apesar que estes resultados podem ser enganosos, uma vez que, apesar de terem havido muitas práticas parcialmente implementadas, seguindo os critérios de classificação em anexo, ainda assim as metas respetivas a essas práticas são consideradas não satisfeitas.
+Caso os critérios não fossem tão rigorosos era possível encontrar bastantes mais metas "satisfeitas parcialmente" o que se refletiria em áreas de processo com melhor classificação.
+No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo é satisfeita. Isto deve-se a que a unidade curricular de LAPR4 à semelhança com os outros LAPR, baseia-se muito no contacto entre Product Owner e equipa de desenvolvimento para haver um constante levantamento de requisitos para assim satisfazer o método iterativo de desenvolvimento de software.
+O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das prátas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificiação final da meta e área de processo.
 
 \section{Conclusões}
 
@@ -1151,7 +1161,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 	\end{table}
 	
 \subsection{Anexo 2 - Critérios de Classificação (Práticas, Metas e Áreas de Processo)}
-\\
+
 \begin{table}[h]
 	\textbf{Classificação - Prática}
 		\centering
@@ -1174,7 +1184,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 			\bottomrule
 		\end{tabular} 
 \end{table}
-\\
+
 \begin{table}[h]
 	\textbf{Classificação - Meta}
 		\centering
@@ -1197,7 +1207,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 			\bottomrule
 		\end{tabular} 
 \end{table}
-\\
+
 \begin{table}[h]
 	\textbf{Classificação - Área de Processo}
 		\centering
