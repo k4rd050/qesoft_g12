@@ -78,6 +78,7 @@ bottom=1.5 cm,
 
 % -------- Incluir pdfs-------
 \usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 %---------Para Titulos: capitulos, secções, etc.-----------
 \usepackage{titlesec}
@@ -306,7 +307,16 @@ Assegurar a realização da verificação dos produtos e analisar os seus result
 \end{tabular}
 
 \subsection{Qualidade do Produto}
-O modelo de qualidade do produto pode ser avaliadado por um conjunto de caraterísticas, como apresentadas na \textcolor{red}{figura (nao esquecer)}. Estas caraterísticas estão contempladas no modelo de qualidade ISSO/IEC 25000 e para esta análise foram utilizadas a Manutenibilidade, Segurança, Eficiência de Performance e Fiabilidade. Assim, foi definido o questionário presente no anexo \textcolor{red}{X}, baseado na especificação definida nos padrões da Object Management Group (OMG). \\
+O modelo de qualidade do produto pode ser avaliadado por um conjunto de caraterísticas, como apresentadas na figura ~\ref{fig_quality}. Estas caraterísticas estão contempladas no modelo de qualidade ISSO/IEC 25000 e para esta análise foram utilizadas a Manutenibilidade, Segurança, Eficiência de Performance e Fiabilidade. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{quality.PNG}
+	\caption{Caraterísticas da qualidade de software de acordo com a norma ISO/IEC 25010 \small{\textit{Fonte: 	\cite{OMG_Performance}}}}
+	\label{fig_quality}
+\end{figure}
+
+Assim, foi definido o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG). \\
 O projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem java, tendo sido assim aplicada a 
 \textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrencias de cada métrica definida no questionário. As classes selecionadas foram: BeanShellLoader(C1), HandlerUserChatDTO(C2), PdfExport(C3), ThreadExport(C4) e UnlinkExportDataAction(C5).\\
 
@@ -322,15 +332,15 @@ Esta caraterística contabiliza o número de violações de boas práticas arqui
 		ASCMM-MNT-1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-2 & 0 & 2 & 0 & 1 & 0 & 3 \\ \hline
 		ASCMM-MNT-3 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\textcolor{red}{ASCMM-MNT-4} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-MNT-4 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-6 & 0 & 2 & 0 & 0 & 0 & 2 \\ \hline
-		\textcolor{red}{ASCMM-MNT-7} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-MNT-7 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-8 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\textcolor{red}{ASCMM-MNT-9} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\textcolor{red}{ASCMM-MNT-10} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-MNT-9 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-MNT-10 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-11 & 0 & 0 & 2 & 0 & 0 & 2 \\ \hline
-		\textcolor{red}{ASCMM-MNT-12} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-MNT-12 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-MNT-13 & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
 		ASCMM-MNT-14 & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
 		ASCMM-MNT-15 & 0 & 0 & 4 & 0 & 0 & 4 \\ \hline
@@ -365,19 +375,19 @@ Esta caraterística contabiliza o número de violações de boas práticas arqui
 		ASCMM-CWE-396 & 0 & 0 & 0 & 1 & 0 & 1 \\ \hline
 		ASCMM-CWE-397 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-434 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\textcolor{red}{ASCMM-CWE-456} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-CWE-456 & 1 & 0 & 2 & 0 & 0 & 3 \\ \hline
 		ASCMM-CWE-606 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-667 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\textcolor{red}{ASCMM-CWE-672} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-CWE-672 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-681 & 1 & 0 & 0 & 0 & 0 & 1 \\ \hline
-		\textcolor{red}{ASCMM-CWE-772} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		ASCMM-CWE-772 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-789 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-798 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 		ASCMM-CWE-835 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \end{longtable}
 \end{samepage}
-Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_security}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 5.
-$$\sum_{n=1}^{22} CISQ - SecME_{22} = 5$$
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_security}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 8.
+$$\sum_{n=1}^{22} CISQ - SecME_{22} = 8$$
 
 \subsubsection{Eficiência de Performance}
 Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que poderão resultar numa operação ineficiente, como a degradação do desempenho ou uso excessivo de recursos do processador \cite{OMG_Performance}.
@@ -387,25 +397,25 @@ Esta caraterística contabiliza o número de violações de boas práticas arqui
 	\endhead
 	\hline	
 	\textbf{Regra} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Final} \\ \hline
-ASCPEM-PRF-1 & 1 & 0 & 1 & 0 & 0 & 2 \\ \hline
-ASCPEM-PRF-2 & 0 & 0 & 4 & 0 & 0 & 4 \\ \hline
-\textcolor{red}{ASCPEM-PRF-3} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-2 & 1 & 0 & 1 & 0 & 0 & 2 \\ \hline
+ASCPEM-PRF-3 & 0 & 0 & 4 & 0 & 0 & 4 \\ \hline
 ASCPEM-PRF-4 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCPEM-PRF-5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCPEM-PRF-6 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCPEM-PRF-7 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-8} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-9} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-10} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-11} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-12} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-13} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-14} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-\textcolor{red}{ASCPEM-PRF-15} & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-8 & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
+ASCPEM-PRF-9 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-10 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-11 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-12 & 0 & 0 & 2 & 0 & 0 & 2 \\ \hline
+ASCPEM-PRF-13 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-14 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCPEM-PRF-15 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 	\end{longtable} 
 
-Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_performance}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 0.
-$$\sum_{n=1}^{15} CISQ - PrfME_{15} = 0$$
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_performance}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 9.
+$$\sum_{n=1}^{15} CISQ - PrfME_{15} = 9$$
 
 \subsubsection{Fiabilidade}
 Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que poderão resultar em operações não confiáveis, como interrupções, corrupção de dados e recuperação de falhas do sistema \cite{OMG_Reliability}. Quanto mais elevado o número de violações, mais provável é, para um determinado período temporal, que o sistema tenha uma falha. 
@@ -423,13 +433,13 @@ ASCRM-CWE-456 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-CWE-674 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-CWE-704 & 1 & 0 & 0 & 0 & 0 & 1 \\ \hline
 ASCRM-CWE-772 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-ASCRM-CWE-788 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCRM-CWE-788 & 0 & 0 & 1 & 0 & 0 & 1 \\ \hline
 ASCRM-RLB-1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-2 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-3 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-ASCRM-RLB-4 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCRM-RLB-4 & 0 & 0 & 7 & 0 & 0 & 7 \\ \hline
 ASCRM-RLB-5 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-ASCRM-RLB-6 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+ASCRM-RLB-6 & 0 & 0 & 1 & 1 & 0 & 2 \\ \hline
 ASCRM-RLB-7 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-8 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-9 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
@@ -444,14 +454,14 @@ ASCRM-RLB-17 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-18 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 ASCRM-RLB-19 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
 \end{longtable} 
-Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_Reliability}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 0.
-$$\sum_{n=1}^{15} CISQ - PrfME_{15} = 0$$
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_Reliability}, seguiu-se o calculo da medida base de segurança. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 27.
+$$\sum_{n=1}^{22} CISQ - PrfME_{22} = 27$$
 
 \subsubsection{Análise de Resultados}
-Depois de apresentados os resultados relativos a cada área de processo com base no questionário efetuado, pode-se partir para algumas conclusões sobre a qualidade do processo utilizado no desenvolvimento do projeto em análise (LAPR4).
-Como se pode verificar, apenas uma das áreas de processo foi satisfeita, a gestão de requisitos. Apesar que estes resultados podem ser enganosos, uma vez que, apesar de terem havido muitas práticas parcialmente implementadas, seguindo os critérios de classificação em anexo, ainda assim as metas respetivas a essas práticas são consideradas não satisfeitas.
-Caso os critérios não fossem tão rigorosos era possível encontrar bastantes mais metas "satisfeitas parcialmente" o que se refletiria em áreas de processo com melhor classificação.
-No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo é satisfeita. Isto deve-se a que a unidade curricular de LAPR4 à semelhança com os outros LAPR, baseia-se muito no contacto entre Product Owner e equipa de desenvolvimento para haver um constante levantamento de requisitos para assim satisfazer o método iterativo de desenvolvimento de software.
+Depois de apresentados os resultados relativos a cada área de processo com base no questionário efetuado, pode-se partir para algumas conclusões sobre a qualidade do processo utilizado no desenvolvimento do projeto em análise (LAPR4). \\
+Como se pode verificar, apenas uma das áreas de processo foi satisfeita, a gestão de requisitos. Apesar que estes resultados podem ser enganosos, uma vez que, apesar de terem havido muitas práticas parcialmente implementadas, seguindo os critérios de classificação em anexo, ainda assim as metas respetivas a essas práticas são consideradas não satisfeitas.\\
+Caso os critérios não fossem tão rigorosos era possível encontrar bastantes mais metas "satisfeitas parcialmente" o que se refletiria em áreas de processo com melhor classificação.\\
+No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo é satisfeita. Isto deve-se a que a unidade curricular de LAPR4 à semelhança com os outros LAPR, baseia-se muito no contacto entre Product Owner e equipa de desenvolvimento para haver um constante levantamento de requisitos para assim satisfazer o método iterativo de desenvolvimento de software. \\
 O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das prátas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificiação final da meta e área de processo.
 
 \section{Conclusões}
@@ -1166,7 +1176,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 	\textbf{Classificação - Prática}
 		\centering
 		\caption{Critérios de Classificação - Prática}
-		\begin{tabular}{p{5in}p{1in}}		
+		\begin{tabular}{p{1in}p{5in}}		
 			\toprule
 			\textbf{Classificação}  & \textbf{Critérios}\\ 
 			\midrule
@@ -1189,7 +1199,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 	\textbf{Classificação - Meta}
 		\centering
 		\caption{Critérios de Classificação - Meta}
-		\begin{tabular}{p{5in}p{1in}}		
+		\begin{tabular}{p{1in}p{5in}}		
 			\toprule
 			\textbf{Classificação}  & \textbf{Critérios}\\ 
 			\midrule
@@ -1212,7 +1222,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 	\textbf{Classificação - Área de Processo}
 		\centering
 		\caption{Critérios de Classificação - Área de Processo}
-		\begin{tabular}{p{5in}p{1in}}		
+		\begin{tabular}{p{1in}p{5in}}		
 			\toprule
 			\textbf{Classificação}  & \textbf{Critérios}\\ 
 			\midrule
@@ -1234,7 +1244,7 @@ As principais conclusões serão apresentadas aqui. Notar que apenas interessam 
 \end{table}
 
 
-\subsection{Anexo 2}
+\subsection{Anexo 3 - Questionário Qualidade do Produto }\label{anexo_produto}
 \textbf{Questionário Qualidade do Produto}\\
 De modo a analisar a avaliar a qualidade do produto, em foi desenvolvido o seguinte questionário que se encontra dividido em quatro grupos, representando medidas padrão: Manutenibilidade, Segurança, Eficiência da Performance e Fiabilidade.
 Cada grupo contém um conjunto de regras de qualidade, para o qual terá de ser indicado o número de violações da mesma.
