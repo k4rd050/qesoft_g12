@@ -316,7 +316,8 @@ A avaliação do modelo de qualidade do produto pode ser elaborada avaliando rec
 
 Definiu-se o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG) para proceder à avaliação, que tem como objetivo definir uma medida padrão de cada métrica pretendida. \\
 Uma vez que o projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem Java, foi aplicada 
-\textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrências de cada métrica definida no questionário. As classes selecionadas foram BeanShellLoader (C1), HandlerUserChatDTO (C2), PdfExport (C3), ThreadExport (C4) e UnlinkExportDataAction (C5).
+\textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrências de cada métrica definida no questionário. As classes selecionadas foram BeanShellLoader (C1), HandlerUserChatDTO (C2), PdfExport (C3), ThreadExport (C4) e UnlinkExportDataAction (C5). \\
+As secções seguintes apresentam os resultados ao questionário desenvolvido.
 
 \subsubsection{Manutenibilidade}
 Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que fazem com que o software desenvolvido seja difícil de ser modificado, aumentando o esforço exigido no seu suporte e na sua adaptação a novos requisitos. Estas violações podem resultar em operações não confiáveis, tais como interrupções, corrupção de dados e longa recuperação de falhas do sistema. \cite{OMG_Maintainability}
@@ -348,8 +349,8 @@ Esta caraterística contabiliza o número de violações de boas práticas arqui
 		ASCMM-MNT-19 & 0 & 0 & 3 & 0 & 0 & 3 \\ \hline
 		ASCMM-MNT-20 & 0 & 0 & 2 & 0 & 2 & 2 \\ \hline
 	\end{longtable}
-Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_manutenibilidade}, seguiu-se o calculo da medida base de manutenibilidade. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 31.
 \newpage
+Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_manutenibilidade}, seguiu-se o calculo da medida base de manutenibilidade. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 31.
 $$\sum_{n=1}^{20} CISQ - MntME_{20} = 31$$
 
 \subsubsection{Segurança}
@@ -615,12 +616,11 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 			\end{tabular} 
 		\end{table}
 	
-\begin{samepage}
-	\begin{table}[H]
-		\centering
-		\textbf{Planeamento de Projeto}
-		\caption{Questionário 1 - Processo - Parte 4}
-			\begin{tabular}{|p{5in}p{1in}|}		
+
+		\centerline{\textbf{Planeamento de Projeto}}
+\begin{longtable}{|p{5in}p{1in}|}				
+				\caption{Questionário 1 - Processo - Parte 4}
+				\endhead	
 				\hline
 				\textbf{Questão}  & \textbf{Avaliação}\\ 
 				\hline
@@ -671,10 +671,7 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 		execução do plano é obtido?
 				 & TI | IP | \underline{\textbf{NI}} | NS \\
 				\hline
-
-		\end{tabular}		
-	\end{table}	
-		\end{samepage}
+		\end{longtable}		
 	
 	
 	\begin{table}[H]
@@ -878,6 +875,7 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 		\end{tabular} 
 	\end{table}
 	
+	\newpage
 	%\begin{table}[H]
 		\centerline{\textbf{Enfoque nos Processos da Organização}}
 		\begin{longtable}{|p{5in}p{1in}|}
@@ -1266,11 +1264,9 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 \subsection{Anexo 3 - Questionário Qualidade de Produto}
 \label{anexo_produto}
 De modo a analisar a avaliar a qualidade do produto, em foi desenvolvido o seguinte questionário que se encontra dividido em quatro grupos, representando medidas padrão: Manutenibilidade, Segurança, Eficiência da Performance e Fiabilidade.
-Cada grupo, que representa uma caraterística a ser avaliada, contém um conjunto de regras de qualidade, para o qual terá de ser indicado o número de violações da mesma.
-
+Cada grupo, que representa uma caraterística a ser avaliada, contém um conjunto de regras de qualidade, para o qual terá de ser indicado o número de violações da mesma.\\
 Grupo 1: Manutenibilidade
 O propósito destas regras é estabelecer uma medida padrão de manutenibilidade com base na deteção de violações de boas práticas arquiteturais e de codificação que podem resultar em operações não confiáveis, como interrupções, corrupção de dados e longa recuperação de falhas do sistema.
-\begin{samepage}
 \begin{itemize}
 	\setlength\itemsep{0em}
 	\item ASCMM-MNT-1: Control Flow Transfer Control Element outside Switch Block
@@ -1294,7 +1290,6 @@ O propósito destas regras é estabelecer uma medida padrão de manutenibilidade
 	\item ASCMM-MNT-19: Named Callable and Method Control Element Excessive Similarity
 	\item ASCMM-MNT-20: Unreachable Named Callable or Method Control Element
 \end{itemize}
-\end{samepage}
 Grupo 2: Segurança
 O propósito destas regras é estabelecer uma medida padrão de segurança com base na deteção de violações de boas práticas arquiteturais e de codificação que poderão resultar na entrada não autorizada em sistemas, roubo de informações confidenciais, e o comprometimento malicioso da integridade do sistema.
 \begin{itemize}
