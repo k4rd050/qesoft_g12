@@ -52,6 +52,16 @@ bottom=1.5 cm,
 \usepackage{tabulary}
 \usepackage{float}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false
+    %linkcolor=blue,
+    %filecolor=magenta     
+    urlcolor=black
+}
+ 
+\urlstyle{same}
+
 % -----------------PORTUGUES----------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -113,19 +123,19 @@ Por outro lado, como se sabe, em projetos de âmbito académico, nem sempre os p
 Por este motivo, acredita-se que é de extrema importância o desenvolvimento de uma análise criteriosa aos procedimentos usados no passado, perceber as suas fraquezas e procurar formas de melhorá-los, ou simplesmente encontrar técnicas alternativas que provem ser mais eficazes.
 Quando se fala em eficácia de processos de desenvolvimento, automaticamente se cria uma nova associação entre o processo e produto, isto é, quando o processo utilizado é bom, naturalmente aumenta a probabilidade do produto final ser melhor. Esta é uma relação que se irá procurar comprovar ou refutar no final deste relatório, quando se proceder à comparação dos resultados de ambas as análises efetuadas (do processo e do produto).
 
-\section{Escolha do Projecto}
-O projeto escolhido para ser avaliado na vertente do processo e produto é o projeto Cleansheets. Este projeto foi realizado no ano letivo de 2015/2016 no âmbito da Unidade de Curricular de Laboratório/Projeto IV da Licenciatura em Engenharia Informática e tinha como objetivo desenvolver uma aplicação de folhas de cálculo com funcionalidades avançadas – tais como cooperação remota, formatação de texto avançada e suporte para macros e fórmulas – de forma a poderem ser aplicadas boas práticas de desenvolvimento e metodologias ágeis de organização de trabalho.\\
-A escolha deste projeto prende-se ao facto de ser um projeto cujo âmbito, arquitetura e funcionamento é conhecido por todos os membros do grupo, facilitando assim o processo de análise de processo e de produto. \\
-O link para o repositório onde se encontra o projeto em análise é o seguinte: https://bitbucket.org/lei-isep/lapr4-2017-2dd
+\section{Escolha do Projeto}
+O projeto escolhido para ser avaliado na vertente do processo e produto é o projeto \textit{Cleansheets}. Este projeto foi realizado no ano letivo de 2015/2016 no âmbito da Unidade de Curricular de Laboratório/Projeto IV da Licenciatura em Engenharia Informática e tinha como objetivo desenvolver uma aplicação de folhas de cálculo com funcionalidades avançadas – tais como cooperação remota, formatação de texto avançada e suporte para macros e fórmulas – de forma a poderem ser aplicadas boas práticas de desenvolvimento e metodologias ágeis de organização de trabalho.\\
+A escolha deste projeto prendeu-se ao facto deste ser um projeto cujo âmbito, arquitetura e funcionamento é conhecido por todos os membros do grupo, facilitando assim o processo de análise de processo e de produto. \\
+O repositório onde se encontra o projeto em análise pode ser acedido através do \textit{link} seguinte, \url{https://bitbucket.org/lei-isep/lapr4-2017-2dd}.
 
 \section{Análise do projeto}
 Nesta secção estão presentes as duas análises de qualidade realizadas ao projeto escolhido. Primeiramente a análise ao processo e posteriormente a análise ao produto. \\
 Na subsecção da análise da qualidade do processo é apresentada uma análise informal ao processo utilizado no decorrer do projeto escolhido (LAPR4). Começa-se por contextualizar o conceito de qualidade de processo, passando de seguida para apresentação de resultados da análise efetuada e consequentes conclusões. \\
 
 \subsection{Análise da Qualidade do Processo}
-Os modelos CMMI(\textit{Capability Maturity Model Integration}), desenvolvidos por equipas multidisciplinares da Universidade de Carnegie Mellon, incluindo o SEI (\textit{Software Engineering Institute}), são coleções de boas práticas que procuram ajudar as organizações a melhorar os seus processos. O modelo CMMI-DEV (CMMI for Development) é especialmente ligado aos processos de desenvolvimento de produtos e serviços, daí a sua utilização no meio do desenvolvolvimento de software. Este possui orientações com foco na melhoria da qualidade final do produto para cumprir as necessidades dos consumidores finais \cite{CMMIProductTeam2010}.\\ 
+Os modelos CMMI(\textit{Capability Maturity Model Integration}), desenvolvidos por equipas multidisciplinares da Universidade de Carnegie Mellon, incluindo o SEI (\textit{Software Engineering Institute}), são coleções de boas práticas que procuram ajudar as organizações a melhorar os seus processos. O modelo CMMI-DEV (CMMI for Development) é especialmente ligado aos processos de desenvolvimento de produtos e serviços, daí a sua utilização no meio do desenvolvimento de software. Este possui orientações com foco na melhoria da qualidade final do produto para cumprir as necessidades dos consumidores finais \cite{CMMIProductTeam2010}.\\ 
 A análise da qualidade de processo a seguir apresentada teve como base uma representação discreta com foco nos níveis 2 e 3 de maturidade e em 7 e 11 áreas de processo para cada um desses níveis respetivamente. Para a obtenção de resultados foi elaborado um questionário (em anexo) com um conjunto questões (previamente fornecidas) para cada uma das áreas de processo, estando dessa forma dividido. Para cada um dos processos existem 4 possíveis respostas:  \textbf{Totalmente Implementado, Implementado Parcialmente, Não Implementado} ou  \textbf{Não Sei} caso não seja aplicável ou seja desconhecido.\\
-O método de avaliação do questionário baseou-se, primeiro na definição das metas de cada área de processo, sendo que para cada uma das metas foram selecionadas as questões associadas. Dessa forma, no momento da avaliação, a cada meta é atribuida uma "nota" que poderá ter os valores  \textbf{Satisfeita, Não Satisfeita ou Não Avaliada} seguindo os critérios no Anexo \ref{anexo_processo_classificacao}. Finalmente é atribuida uma avaliação semelhante para cada área de processo sendo que acresce aqui uma possível classificação \textbf{Não Aplicável} para os casos em que esse processo não é aplicável ao projeto em análise.
+O método de avaliação do questionário baseou-se, primeiro na definição das metas de cada área de processo, sendo que para cada uma das metas foram selecionadas as questões associadas. Dessa forma, no momento da avaliação, a cada meta é atribuída uma "nota" que poderá ter os valores  \textbf{Satisfeita, Não Satisfeita ou Não Avaliada} seguindo os critérios no Anexo \ref{anexo_processo_classificacao}. Finalmente é atribuída uma avaliação semelhante para cada área de processo sendo que acresce aqui uma possível classificação \textbf{Não Aplicável} para os casos em que esse processo não é aplicável ao projeto em análise.
 
 \subsubsection{Resultados}
 Nesta subsecção são apresentados os resultados relativos ao questionário desenvolvido, presente no Anexo \ref{anexo_processo}. \\
@@ -304,7 +314,7 @@ A avaliação do modelo de qualidade do produto pode ser elaborada avaliando rec
 	\label{fig_quality}
 \end{figure}
 
-Definiu-se o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG) para proceder à avaliação. \\
+Definiu-se o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG) para proceder à avaliação, que tem como objetivo definir uma medida padrão de cada métrica pretendida. \\
 Uma vez que o projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem Java, foi aplicada 
 \textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrências de cada métrica definida no questionário. As classes selecionadas foram BeanShellLoader (C1), HandlerUserChatDTO (C2), PdfExport (C3), ThreadExport (C4) e UnlinkExportDataAction (C5).
 
@@ -339,6 +349,7 @@ Esta caraterística contabiliza o número de violações de boas práticas arqui
 		ASCMM-MNT-20 & 0 & 0 & 2 & 0 & 2 & 2 \\ \hline
 	\end{longtable}
 Após a contabilização de violações de cada métrica apresentada na tabela ~\ref{table_manutenibilidade}, seguiu-se o calculo da medida base de manutenibilidade. Para obter este valor, é necessário realizar o somatório de todas as violações detetadas, chegando assim ao valor 31.
+\newpage
 $$\sum_{n=1}^{20} CISQ - MntME_{20} = 31$$
 
 \subsubsection{Segurança}
@@ -380,7 +391,7 @@ $$\sum_{n=1}^{22} CISQ - SecME_{22} = 8$$
 \subsubsection{Eficiência de Performance}
 Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que poderão resultar numa operação ineficiente, como a degradação do desempenho ou uso excessivo de recursos do processador \cite{OMG_Performance}.
 \begin{longtable}{|p{1.3in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}|}
-	\caption{Regras da caraterística eficiencia de performance}
+	\caption{Regras da caraterística eficiência de performance}
 	\label{table_performance}
 	\endhead
 	\hline	
@@ -456,18 +467,29 @@ Como se pode verificar nos resultados apresentados na secção anterior e na Fig
 \end{figure}
 Caso os critérios fossem menos rigorosos, era possível encontrar bastantes mais metas "satisfeitas parcialmente", o que se refletiria em áreas de processo com melhor classificação.\\
 No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo ser satisfeita. Isto deve-se ao facto da unidade curricular de LAPR4 à semelhança com os outros LAPR, se basear muito no contacto entre "Product Owner" e equipa de desenvolvimento para haver um constante levantamento de requisitos e assim satisfazer o método iterativo de desenvolvimento de software. \\
-O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das prátas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificação final da meta e área de processo.
+O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das práticas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificação final da meta e área de processo. \\
+Relativamente à análise do produto, com base no conhecimento que o grupo possui à cerca da equipa e do projeto em questão, este acredita que pode ser possível relacionar a natureza e particularidades de algumas das regras violadas com a falta de experiência da equipa de desenvolvido quanto a algumas das particularidades da arquitetura de software, uma vez que foi o maior e mais complexo projeto desenvolvido até ao momento da sua elaboração.\\ 
+Na figura ~\ref{figClass} é possível observar o número de violação de cada categoria por classe. Da sua observação é possível concluir que a classe PdfExport é a que possui mais violações. A figura ~\ref{figQuality} apresenta o número de violações por categoria.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chart_classes.PNG}
+	\caption{Número de regras violadas em função da característica de qualidade, por classe \small}
+	\label{figClass}
+\end{figure}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{graph_results_product.PNG}
 	\caption{Número de regras violadas em função da característica de qualidade \small}
-	\label{fig_quality}
+	\label{figQuality}
 \end{figure}
-Com base no conhecimento que o grupo possui à cerca da equipa e do projeto em questão, este acredita que pode ser possível relacionar a natureza e particularidades de algumas das regras violadas com a falta de experiência da equipa de desenvolvido quanto a algumas das particularidades da arquitetura de software, uma vez que foi o maior e mais complexo projeto desenvolvido até ao momento da sua elaboração. Apesar de não existirem dados que permitam afirmar tal observação, as características de manutenibilidade e fiabilidade costumam de uma forma geral estar fortemente relacionadas com a experiência da equipa responsável pela conceção da solução, corroborando a hipótese. \\
+
+Apesar de não existirem dados que permitam afirmar tal observação, as características de manutenibilidade e fiabilidade costumam de uma forma geral estar fortemente relacionadas com a experiência da equipa responsável pela conceção da solução, corroborando a hipótese.\\
 Contudo, comparando os resultados das categorias de manutenibilidade e fiabilidade com as categorias de segurança e eficiência de performance é possível observar que houve um maior cuidado com estas duas últimas características. Considerando o contexto em que o projeto foi desenvolvido acredita-se que os resultados obtidos nestas duas categorias são fruto do cuidado com da cultura de testes utilizada nos projetos da Licenciatura assim como dos exemplos e práticas lecionadas nas Unidades Curriculares do 2º ano da Licenciatura, em especial Estruturas de Informação e Engenharia de Aplicações.
 
 \section{Conclusões}
-Relativamente à análise da qualidade do produto, as nossas observações permitem-nos concluir que estamos perante um produto que, à partida, é seguro e performante. Ainda assim, o produto em análise possui um número elevado de defeitos no que toca a boas práticas que promovem a manutenibilidade e fiabilidade, podendo comprometer a continuação do projeto de forma sustentável a nível de recursos e complexidade. 
+Relativamente à análise da qualidade do produto, as nossas observações permitem-nos concluir que estamos perante um produto que, à partida, é seguro e tem uma boa performance. Ainda assim, o produto em análise possui um número elevado de defeitos no que toca a boas práticas que promovem a manutenibilidade e fiabilidade, podendo comprometer a continuação do projeto de forma sustentável a nível de recursos e complexidade. 
 Isto pode dever-se ao facto de tal como foi analisado, a qualidade de processo deste projeto não cumpre de todo os requisitos mínimos para um projeto de caráter profissional. Pode pois refletir-se na qualidade final do produto que, lá está, sendo um projeto académico, é considerado aceitável este tipo de imperfeições, uma vez que o objetivo de aprendizagem é adquirir as noções e padrões de desenvolvimento de software. \\
 Baseando-se nos resultados descritos neste documento, o grupo reconhece que este tipo de análises são uma mais valia para avaliar de uma forma palpável os elementos do processo de desenvolvimento de software que devem ser melhorados num projeto assim como para avaliar quais as características cruciais que devem ser reavaliadas para a entrega de um produto de qualidade. O grupo reconhece também a importância e a mais valia das Unidades Curriculares de Laboratório/Projeto pois estas permitem desde cedo aos alunos ter um contacto com os aspetos chave do processo de desenvolvimento de software, ainda que de uma forma que pode ser considerada insatisfatória pelos padrões de qualidade utilizados na análise.
 
@@ -511,11 +533,13 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 	\end{table}
 	
 	%\begin{samepage}
-		\begin{table}[H]
-			\textbf{Medição e Análise}
-				\centering
+		%\begin{longtable}
+			\centerline{\textbf{Medição e Análise}}
+				
+				\begin{longtable}{|p{5in}p{1in}|} 
+					%\centering
 				\caption{Questionário 1 - Processo - Parte 2}
-				\begin{tabular}{|p{5in}p{1in}|} \hline
+				\endhead \hline
 					\textbf{Questão}  & \textbf{Avaliação}\\  \hline
 					8 – São estabelecidos objetivos de medição?
 			 & TI | IP | \underline{\textbf{NI}} | NS \\
@@ -544,8 +568,7 @@ Baseando-se nos resultados descritos neste documento, o grupo reconhece que este
 			interessadas?
 			 & TI | IP | \underline{\textbf{NI}} | NS \\
 					\hline
-				\end{tabular} 
-			\end{table}
+			\end{longtable}
 			
 			
 	%\end{samepage}
