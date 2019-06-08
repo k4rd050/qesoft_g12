@@ -462,21 +462,13 @@ Como se pode verificar nos resultados apresentados na secção anterior e na Fig
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{graph_results_process.PNG}
-	\caption{Número de regras violadas em função da característica de qualidade \small}
+	\caption{Número total de áreas de processo por classficação \small}
 	\label{fig_quality}
 \end{figure}
 Caso os critérios fossem menos rigorosos, era possível encontrar bastantes mais metas "satisfeitas parcialmente", o que se refletiria em áreas de processo com melhor classificação.\\
 No entanto, referindo agora à gestão de requisitos, não deixa de ser importante verificar que é excelente para um projeto de âmbito académico esta área de processo ser satisfeita. Isto deve-se ao facto da unidade curricular de LAPR4 à semelhança com os outros LAPR, se basear muito no contacto entre "Product Owner" e equipa de desenvolvimento para haver um constante levantamento de requisitos e assim satisfazer o método iterativo de desenvolvimento de software. \\
 O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito importante que é focado neste tipo de projetos, e isto deveria ter reflexo numa boa classificação em várias áreas de processo como Planeamento do projeto, Solução Técnica, Monitorização e controlo do projeto e ainda Garantia da qualidade do produto e processo. Foi utilizada a ferramenta Jira neste projeto, o que deu a implementação parcial a algumas das práticas englobadas nas áreas de processo anteriores, infelizmente as questões elaboradas têm uma cariz bastante mais ligada a projetos profissionais o que fez com que também houvesse muitas práticas não implementadas, baixando a classificação final da meta e área de processo. \\
-Relativamente à análise do produto, com base no conhecimento que o grupo possui à cerca da equipa e do projeto em questão, este acredita que pode ser possível relacionar a natureza e particularidades de algumas das regras violadas com a falta de experiência da equipa de desenvolvido quanto a algumas das particularidades da arquitetura de software, uma vez que foi o maior e mais complexo projeto desenvolvido até ao momento da sua elaboração.\\ 
-Na figura ~\ref{figClass} é possível observar o número de violação de cada categoria por classe. Da sua observação é possível concluir que a classe PdfExport é a que possui mais violações. A figura ~\ref{figQuality} apresenta o número de violações por categoria.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{chart_classes.PNG}
-	\caption{Número de regras violadas em função da característica de qualidade, por classe \small}
-	\label{figClass}
-\end{figure}
+Relativamente à análise do produto, com base na observação da do número de regras violadas em função da caterística de qualidade descritas na figura ~\ref{figQuality} e no conhecimento que o grupo possui à cerca da equipa e do projeto em questão, este acredita que pode ser possível relacionar a natureza e particularidades de algumas das regras violadas com a falta de experiência da equipa de desenvolvido quanto a algumas das particularidades da arquitetura de software, uma vez que foi o maior e mais complexo projeto desenvolvido até ao momento da sua elaboração.\\ 
 
 \begin{figure}[H]
 	\centering
@@ -486,7 +478,15 @@ Na figura ~\ref{figClass} é possível observar o número de violação de cada 
 \end{figure}
 
 Apesar de não existirem dados que permitam afirmar tal observação, as características de manutenibilidade e fiabilidade costumam de uma forma geral estar fortemente relacionadas com a experiência da equipa responsável pela conceção da solução, corroborando a hipótese.\\
-Contudo, comparando os resultados das categorias de manutenibilidade e fiabilidade com as categorias de segurança e eficiência de performance é possível observar que houve um maior cuidado com estas duas últimas características. Considerando o contexto em que o projeto foi desenvolvido acredita-se que os resultados obtidos nestas duas categorias são fruto do cuidado com da cultura de testes utilizada nos projetos da Licenciatura assim como dos exemplos e práticas lecionadas nas Unidades Curriculares do 2º ano da Licenciatura, em especial Estruturas de Informação e Engenharia de Aplicações.
+Contudo, comparando os resultados das categorias de manutenibilidade e fiabilidade com as categorias de segurança e eficiência de performance é possível observar que houve um maior cuidado com estas duas últimas características. Considerando o contexto em que o projeto foi desenvolvido acredita-se que os resultados obtidos nestas duas categorias são fruto do cuidado com da cultura de testes utilizada nos projetos da Licenciatura assim como dos exemplos e práticas lecionadas nas Unidades Curriculares do 2º ano da Licenciatura, em especial Estruturas de Informação e Engenharia de Aplicações. \\
+Na figura ~\ref{figClass} é possível observar o número de violação de cada categoria por classe e é possível concluir que a classe PdfExport é não só a classe que possui mais violações das regras de qualidade como é a classe responsável por grande parte das violações encontradas durante a análise.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chart_classes.PNG}
+\caption{Número de violações por classe \small}
+	\label{figClass}
+\end{figure}
 
 \section{Conclusões}
 Relativamente à análise da qualidade do produto, as nossas observações permitem-nos concluir que estamos perante um produto que, à partida, é seguro e tem uma boa performance. Ainda assim, o produto em análise possui um número elevado de defeitos no que toca a boas práticas que promovem a manutenibilidade e fiabilidade, podendo comprometer a continuação do projeto de forma sustentável a nível de recursos e complexidade. 
