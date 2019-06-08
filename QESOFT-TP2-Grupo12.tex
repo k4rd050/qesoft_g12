@@ -121,8 +121,9 @@ Nível a usar quando necessário.
 Nível a usar apenas quando for estritamente necessário.
 
 \section{Escolha do Projecto}
-O projeto escolhido para ser avaliado na vertente do processo e produto foi o projeto de Laboratório/Projeto IV, realizado no ano letivo de 2015/2016 na licenciatura em Engenharia Informática, com o objetivo de desenvolver uma folha de cálculo complexa. Todos os elementos do grupo possuem conhecimento sobre o projeto desenvolvido. JUSTIFICAR ESCOLHA??
+O projeto escolhido para ser avaliado na vertente do processo e produto é o projeto Cleansheets. Este projeto foi realizado no ano letivo de 2015/2016 no âmbito da Unidade de Curricular de Laboratório/Projeto IV da Licenciatura em Engenharia Informática e tinha como objetivo desenvolver uma aplicação de folhas de cálculo com funcionalidades avançadas – tais como cooperação remota, formatação de texto avançada e suporte para macros e fórmulas – de forma a poderem ser aplicadas boas práticas de desenvolvimento e metodologias ágeis de organização de trabalho.
 
+A escolha deste projeto prende-se ao facto de ser um projeto cujo âmbito, arquitetura e funcionamento é conhecido por todos os membros do grupo, facilitando assim o processo de análise de processo e de produto. 
 
 \section{Avaliação e Outras Secções}
 O relatório deve descrever toda a avaliação realizada e os resultados dessa avaliação. A avaliação do processo terá de ser realizada usando o CMMI e de acordo com a abordagem indicada nas aulas e complementada com os documentos fornecidos, incluindo este. A avaliação do produto seguirá o modelo OMG a ser indicado. Usar uma secção para cada avaliação.
@@ -307,7 +308,7 @@ Assegurar a realização da verificação dos produtos e analisar os seus result
 \end{tabular}
 
 \subsection{Qualidade do Produto}
-O modelo de qualidade do produto pode ser avaliadado por um conjunto de caraterísticas, como apresentadas na figura ~\ref{fig_quality}. Estas caraterísticas estão contempladas no modelo de qualidade ISSO/IEC 25000 e para esta análise foram utilizadas a Manutenibilidade, Segurança, Eficiência de Performance e Fiabilidade. 
+A avaliação do modelo de qualidade do produto pode ser elaborada avaliando recorrendo a um conjunto de características contempladas no modelo de qualidade ISSO/IEC 25000, descritas na figura ~\ref{fig_quality}. A avaliação descrita neste documento assentará-se nas características de Manutenibilidade, Segurança, Eficiência de Performance e Fiabilidade.
 
 \begin{figure}[h]
 	\centering
@@ -316,12 +317,12 @@ O modelo de qualidade do produto pode ser avaliadado por um conjunto de carater�
 	\label{fig_quality}
 \end{figure}
 
-Assim, foi definido o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG). \\
-O projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem java, tendo sido assim aplicada a 
-\textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrencias de cada métrica definida no questionário. As classes selecionadas foram: BeanShellLoader(C1), HandlerUserChatDTO(C2), PdfExport(C3), ThreadExport(C4) e UnlinkExportDataAction(C5).\\
+Definiu-se o questionário presente no anexo ~\ref{anexo_produto}, baseado na especificação definida nos padrões da Object Management Group (OMG) para proceder à avaliação. \\
+Uma vez que o projeto escolhido para a análise contém 793 classes de código desenvolvido na linguagem Java, foi aplicada 
+\textit{Hubbard’s Rule of Five}, selecionando 5 classes aleatórias para contabilizar o número de ocorrências de cada métrica definida no questionário. As classes selecionadas foram BeanShellLoader (C1), HandlerUserChatDTO (C2), PdfExport (C3), ThreadExport (C4) e UnlinkExportDataAction (C5).\\
 
 \subsubsection{Manutenibilidade}
-Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que fazem com que o software desenvovlido seja dificil de ser modificado, aumenta o esforço do seu suporte e da sua adaptação a novos requisitos. Estas violações podem resultar em operações não confiáveis, como interrupções, corrupção de dados e longa recuperação de falhas do sistema \cite{OMG_Maintainability}.
+Esta caraterística contabiliza o número de violações de boas práticas arquiteturais que fazem com que o software desenvolvido seja difícil de ser modificado, aumentando o esforço exigido no seu suporte e na sua adaptação a novos requisitos. Estas violações podem resultar em operações não confiáveis, tais como interrupções, corrupção de dados e longa recuperação de falhas do sistema. \cite{OMG_Maintainability}
 
 	\begin{longtable}{p{1.2in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.28in}|p{0.35in}}
 		\caption{Número de violações em cada classe por regra de manutenibilidade}
@@ -467,15 +468,19 @@ O rigor no desenvolvimento ágil, com base em SCRUM é um ponto também muito im
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{graph_results_product.PNG}
-	\caption{}
+	\caption{Número de regras violadas em função da característica de qualidade \small}
 	\label{fig_quality}
 \end{figure}
 
+Com base no conhecimento que o grupo possui à cerca da equipa e do projeto em questão, este acredita que pode ser possível relacionar a natureza e particularidades de algumas das regras violadas com a falta de experiência da equipa de desenvolvido quanto a algumas das particularidades da arquitetura de software, uma vez que foi o maior e mais complexo projeto desenvolvido até ao momento da sua elaboração. Apesar de não existirem dados que permitam afirmar tal observação, as características de manutenibilidade e fiabilidade costumam de uma forma geral estar fortemente relacionadas com a experiência da equipa responsável pela conceção da solução, corroborando a hipótese.
+
+Contudo, comparando os resultados das categorias de manutenibilidade e fiabilidade com as categorias de segurança e eficiência de performance é possível observar que houve um maior cuidado com estas duas últimas características. Considerando o contexto em que o projeto foi desenvolvido acredita-se que os resultados obtidos nestas duas categorias são fruto do cuidado com da cultura de testes utilizada nos projetos da Licenciatura assim como dos exemplos e práticas lecionadas nas Unidades Curriculares do 2º ano da Licenciatura, em especial Estruturas de Informação e Engenharia de Aplicações.
 
 \section{Conclusões}
 
+Relativamente à análise da qualidade do produto, as nossas observações permitem-nos concluir que estamos perante um produto que, à partida, é seguro e performante. Ainda assim, o produto em análise possui um número elevado de defeitos no que toca a boas práticas que promovem a manutenibilidade e fiabilidade, podendo comprometer a continuação do projeto de forma sustentável a nível de recursos e complexidade.
 
-As principais conclusões serão apresentadas aqui. Notar que apenas interessam aspectos técnico/ científicos. Quaisquer dúvidas terão de ser colocadas ao docente.
+Baseando-se nos resultados descritos neste documento, o grupo reconhece que este tipo de análises são uma mais valia para avaliar de uma forma palpável os elementos do processo de desenvolvimento de software que devem ser melhorados num projeto assim como para avaliar quais as características cruciais que devem ser reavaliadas para a entrega de um produto de qualidade. O grupo reconhece também a importância e a mais valia das Unidades Curriculares de Laboratório/Projeto pois estas permitem desde cedo aos alunos ter um contacto com os aspetos chave do processo de desenvolvimento de software, ainda que de uma forma que pode ser considerada insatisfatória pelos padrões de qualidade utilizados na análise.
 
 % -------------- BIBLIOGRAFIA -------------
 \renewcommand\bibname{Referências} % mudar nome capítulo 
